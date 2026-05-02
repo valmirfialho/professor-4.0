@@ -3,69 +3,133 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Professor 4.0</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:'Poppins',sans-serif;background:#05070f;color:#fff;}
-.container{max-width:1100px;margin:auto;padding:20px;}
 
-.hero{padding:60px 0;text-align:center;}
-.hero h1{font-size:42px;}
-.hero p{margin-top:15px;font-size:18px;color:#cbd5f5;}
+body{
+font-family:'Poppins',sans-serif;
+background:#04060f;
+color:#fff;
+line-height:1.6;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:20px;
+}
+
+.hero{
+text-align:center;
+padding:80px 0;
+}
+
+.hero h1{
+font-size:42px;
+font-weight:700;
+}
+
+.hero p{
+margin-top:15px;
+color:#cbd5f5;
+font-size:18px;
+}
 
 .btn{
+display:inline-block;
+margin-top:25px;
+padding:18px 35px;
+border-radius:12px;
 background:linear-gradient(90deg,#22c55e,#16a34a);
-padding:16px 32px;
-border-radius:10px;
 color:#000;
 font-weight:700;
 text-decoration:none;
-display:inline-block;
-margin-top:25px;
+transition:0.3s;
 }
 
-.section{margin-top:60px;}
-.section h2{color:#22c55e;margin-bottom:20px;}
+.btn:hover{
+transform:scale(1.05);
+}
 
-ul{list-style:none;}
-ul li{margin-bottom:10px;}
+.section{
+margin-top:70px;
+}
 
-.box{
+.section h2{
+color:#22c55e;
+margin-bottom:20px;
+font-size:28px;
+}
+
+.card{
 background:#0f172a;
 padding:25px;
-border-radius:12px;
+border-radius:15px;
 margin-top:20px;
+box-shadow:0 0 20px rgba(0,0,0,0.3);
 }
 
-.price{font-size:42px;color:#22c55e;}
-.old{text-decoration:line-through;color:#aaa;}
+ul{
+list-style:none;
+}
 
-.countdown{
-font-size:28px;
-margin-top:15px;
+ul li{
+margin-bottom:12px;
+padding-left:10px;
+}
+
+.highlight{
+color:#22c55e;
+font-weight:600;
+}
+
+.price-box{
+text-align:center;
+background:#0f172a;
+padding:30px;
+border-radius:15px;
+margin-top:40px;
+}
+
+.old{
+text-decoration:line-through;
+color:#aaa;
+}
+
+.price{
+font-size:48px;
+color:#22c55e;
+font-weight:700;
+}
+
+.badge{
+margin-top:10px;
 color:#ff4444;
 font-weight:bold;
 }
 
 .testimonial{
 background:#111827;
-padding:15px;
-border-radius:10px;
+padding:20px;
+border-radius:12px;
 margin-top:10px;
 }
 
-.warning{
-background:#7f1d1d;
-padding:10px;
-border-radius:6px;
-margin-top:15px;
+.footer{
+margin-top:60px;
+text-align:center;
+color:#777;
 font-size:14px;
 }
 
-.footer{text-align:center;margin-top:60px;font-size:14px;color:#777;}
+@media(max-width:768px){
+.hero h1{font-size:30px;}
+}
 </style>
 </head>
 
@@ -75,92 +139,101 @@ font-size:14px;
 
 <!-- HERO -->
 <div class="hero">
-<h1>Pare de perder horas planejando aulas.<br>Use IA e faça tudo em minutos.</h1>
-<p>Mesmo sem experiência com tecnologia.</p>
+<h1>Crie aulas, provas e atividades em minutos usando IA</h1>
+<p>Mesmo que você nunca tenha usado tecnologia antes</p>
 
-<a href="https://pay.kiwify.com.br/2GS1Mav" class="btn">QUERO COMEÇAR AGORA</a>
+<a href="https://pay.kiwify.com.br/2GS1Mav" class="btn">
+QUERO ACESSO IMEDIATO
+</a>
 
-<div class="warning">
-⚠️ Professores já estão usando IA e ganhando tempo todos os dias
+<p class="badge">🔥 Professores já estão usando IA e economizando horas por semana</p>
 </div>
 
-<div class="countdown" id="countdown"></div>
-</div>
-
-<!-- PROBLEMA -->
+<!-- DOR -->
 <div class="section">
-<h2>Se você é professor, isso acontece:</h2>
+<h2>Se você é professor, isso vai soar familiar</h2>
+
+<div class="card">
 <ul>
 <li>⏳ Falta de tempo para planejar aulas</li>
-<li>😩 Muito trabalho manual</li>
-<li>📉 Pouca inovação nas atividades</li>
-<li>🤯 Sobrecarga constante</li>
+<li>😩 Trabalho repetitivo e cansativo</li>
+<li>📉 Dificuldade em engajar alunos</li>
+<li>🤯 Sobrecarga no dia a dia</li>
 </ul>
+</div>
 </div>
 
 <!-- SOLUÇÃO -->
 <div class="section">
-<h2>Agora imagine:</h2>
+<h2>Agora imagine fazer tudo isso em minutos</h2>
+
+<div class="card">
 <ul>
-<li>✔ Aula pronta em minutos</li>
-<li>✔ Provas automáticas</li>
+<li>✔ Aulas prontas rapidamente</li>
+<li>✔ Provas geradas automaticamente</li>
 <li>✔ Planejamento inteligente</li>
 <li>✔ Mais tempo livre</li>
 </ul>
 </div>
+</div>
+
+<!-- CURSO -->
+<div class="section">
+<h2>O que você vai aprender</h2>
+
+<div class="card">
+<ul>
+<li>Uso do ChatGPT para criar aulas</li>
+<li>Criação automática de atividades</li>
+<li>Planejamento com IA</li>
+<li>Uso de Canva e ferramentas modernas</li>
+<li>Banco de questões automatizado</li>
+</ul>
+</div>
+</div>
+
+<!-- IMAGEM -->
+<div class="section">
+<img src="https://via.placeholder.com/800x400" style="width:100%;border-radius:15px;">
+</div>
 
 <!-- PROVA SOCIAL -->
 <div class="section">
-<h2>Veja o que professores estão dizendo</h2>
+<h2>O que professores estão dizendo</h2>
 
-<div class="testimonial">“Economizei horas por semana com IA” – Carla, professora</div>
-<div class="testimonial">“Minhas aulas ficaram muito melhores” – João, ensino médio</div>
-<div class="testimonial">“Nunca pensei que seria tão fácil usar IA” – Ana, professora</div>
-
-</div>
-
-<!-- CONTEÚDO -->
-<div class="section">
-<h2>O que você vai aprender</h2>
-<ul>
-<li>Fundamentos da IA</li>
-<li>ChatGPT na prática</li>
-<li>Planejamento com IA</li>
-<li>Criação de atividades</li>
-<li>Banco de questões</li>
-</ul>
+<div class="testimonial">“Economizei horas toda semana” — Carla (RJ)</div>
+<div class="testimonial">“Minhas aulas ficaram muito melhores” — João</div>
+<div class="testimonial">“Muito fácil de usar” — Mariana</div>
 </div>
 
 <!-- OFERTA -->
-<div class="section box">
-<h2>Oferta especial</h2>
+<div class="price-box">
 
-<p class="old">De R$ 97,00</p>
-<p class="price">R$ 47,00</p>
+<p class="old">De R$97,00</p>
+<p class="price">R$47,00</p>
 
-<ul>
-<li>✔ Acesso imediato</li>
-<li>✔ Curso completo</li>
-<li>✔ 7 dias de garantia</li>
-</ul>
+<p>Acesso imediato • Pagamento único</p>
 
-<a href="https://pay.kiwify.com.br/2GS1Mav" class="btn">QUERO COMEÇAR AGORA</a>
+<a href="https://pay.kiwify.com.br/2GS1Mav" class="btn">
+QUERO COMEÇAR AGORA
+</a>
 
-<p style="margin-top:10px;color:#ff4444;">
-🔥 Oferta expira hoje
-</p>
+<p class="badge">⏰ Oferta pode sair do ar a qualquer momento</p>
 </div>
 
 <!-- GARANTIA -->
-<div class="section box">
+<div class="section card">
 <h2>Garantia total</h2>
 <p>Teste por 7 dias. Se não gostar, devolvemos seu dinheiro.</p>
 </div>
 
-<!-- CTA FINAL -->
+<!-- FINAL -->
 <div class="section">
-<h2>Você decide: continuar como está ou evoluir</h2>
-<a href="https://pay.kiwify.com.br/2GS1Mav" class="btn">QUERO COMEÇAR AGORA</a>
+<h2>Você pode continuar como está ou evoluir agora</h2>
+
+<a href="https://pay.kiwify.com.br/2GS1Mav" class="btn">
+LIBERAR MEU ACESSO AGORA
+</a>
 </div>
 
 <div class="footer">
@@ -168,27 +241,6 @@ font-size:14px;
 </div>
 
 </div>
-
-<script>
-function countdownTimer() {
-    const now = new Date();
-    const end = new Date();
-    end.setHours(23,59,59);
-
-    const diff = end - now;
-
-    const h = Math.floor(diff / 1000 / 60 / 60);
-    const m = Math.floor(diff / 1000 / 60 % 60);
-    const s = Math.floor(diff / 1000 % 60);
-
-    document.getElementById("countdown").innerHTML =
-    "Oferta termina em: " + h + "h " + m + "m " + s + "s";
-
-    setTimeout(countdownTimer, 1000);
-}
-
-countdownTimer();
-</script>
 
 </body>
 </html>
